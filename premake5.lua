@@ -21,7 +21,7 @@ project "yaml-cpp"
 
 	defines
 	{
-		"YAML_CPP_STATIC_DEFINE"
+		--"YAML_CPP_STATIC_DEFINE" Edited dll.h until a working solution is found TODO:
 	}
 
 	filter "system:windows"
