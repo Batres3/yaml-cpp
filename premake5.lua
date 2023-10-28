@@ -1,7 +1,7 @@
 project "yaml-cpp"
 	kind "StaticLib"
 	language "C++"
-	staticruntime "on"
+	staticruntime "off"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -21,7 +21,7 @@ project "yaml-cpp"
 
 	defines
 	{
-		--"YAML_CPP_STATIC_DEFINE" Edited dll.h until a working solution is found TODO:
+		"YAML_CPP_STATIC_DEFINE"
 	}
 
 	filter "system:windows"
